@@ -1,3 +1,3 @@
 # action1
 
-This repo will be used for learning gitACtion
+This repo will be used for learning gitACtion for POC
