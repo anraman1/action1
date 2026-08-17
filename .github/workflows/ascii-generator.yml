@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: checkout repo
-      uses: actions/checkout@7
+      uses: actions/checkout@v7
     - name: Install cowsay
       run: sudo apt-get install cowsay -y
     - name: Execute cowsay CMD
