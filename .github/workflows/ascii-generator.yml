@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   ASCII Generator cowsay:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
     - name: checkout repo
       users: actions/checkout@7
