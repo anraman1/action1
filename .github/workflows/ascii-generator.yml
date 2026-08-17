@@ -3,7 +3,7 @@ name: ASCII Generator
 on: [push]
 
 jobs:
-  ASCII Generator cowsay:
+  ascii-generator-cowsay:
     runs-on: ubuntu-latest
     steps:
     - name: checkout repo
