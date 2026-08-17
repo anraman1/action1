@@ -1,0 +1,20 @@
+name: ASCII Generator
+
+on: [push]
+
+jobs:
+  ASCII Generator cowsay:
+    runs_on: ubuntu-latest
+    steps:
+    - name: checkout repo
+      users: actions/checkout@7
+    - name: Install cowsay
+      run: sudo apt-get install cowsay -y
+    - name: Execute cowsay CMD
+      run: cowsay -f cow "Run for cover, Im a COW ... maa" >> cow.txt
+    - name: Test file Exists
+      run: grep -i "cow" cow.txt
+    - name: Read Files
+      run: cat cow.txt
+  
+  
